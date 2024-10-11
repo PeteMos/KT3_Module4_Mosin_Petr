@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Employees.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="650" d:DesignWidth="1000"
-      Title="ИС - список сотрудников">
+      Title="ИС прокат спортивного инвентаря - список сотрудников">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -18,19 +18,35 @@
                 <DataTemplate>
                     <Grid>
                         <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="500"></ColumnDefinition>
+                            <ColumnDefinition Width="300"></ColumnDefinition>
                             <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="60"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0">
-                            <TextBlock Text="{Binding FIO,
-                                StringFormat={}ФИО {0}}"></TextBlock>
+                        <StackPanel Grid.Column="0" Margin="10">
+                            <TextBlock>
+                                <Run Text="ФИО "></Run>
+                                <Run Text="{Binding LastName}"></Run>
+                                <Run Text=""></Run>
+                                <Run Text="{Binding FirstName}"></Run>
+                                <Run Text=""></Run>
+                                <Run Text="{Binding Patronymic}"></Run>
+                            </TextBlock>
+                            <TextBlock Text="{Binding Email,
+                                StringFormat={}Email {0}}"></TextBlock>
+                            <TextBlock Text="{Binding DateOfBirth,
+                                StringFormat={}Дата рождения {0}}"></TextBlock>
+                            <TextBlock Text="{Binding Phone,
+                                StringFormat={}Номер телефона {0}}"></TextBlock>
                         </StackPanel>
+                        <TextBlock Grid.Column="1" Text="{Binding Role.Role1,
+                            StringFormat={}Должность {0}}"></TextBlock>
+                        <Button x:Name="EditUser" Content="Редактировать" Click="EditUser_Click" Grid.Column="2"></Button>
                     </Grid>
                     
                 </DataTemplate>
 
             </ListView.ItemTemplate>
         </ListView>
-        <Button x:Name="AddUser" Grid.Row="1" Content="Добавить пользователя" Click="AddUser_Click"></Button>
+        <Button x:Name="AddUser" Grid.Row="1" Content="Добавить" Click="AddUser_Click"></Button>
     </Grid>
 </Page>

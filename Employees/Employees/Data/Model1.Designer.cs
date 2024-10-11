@@ -1,4 +1,4 @@
-﻿// Создание кода T4 для модели "C:\Users\comcuru\Desktop\Мосин_Пётр_ИСП411\Employees\Employees\Data\Page.edmx" включено. 
+﻿// Создание кода T4 для модели "C:\Users\comcuru\Desktop\KT3_Module4_Mosin_Petr\Employees\Employees\Data\Model1.edmx" включено. 
 // Чтобы включить формирование кода прежних версий, измените значение свойства "Стратегия создания кода" конструктора
 // на "Legacy ObjectContext". Это свойство доступно в окне "Свойства", если модель
 // открыта в конструкторе.

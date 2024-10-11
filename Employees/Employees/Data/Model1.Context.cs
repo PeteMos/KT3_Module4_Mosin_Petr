@@ -22,12 +22,13 @@ namespace Employees.Data
         }
         public static EmplEntities GetContext()
         {
-            if(_context == null)
+            if (_context == null)
             {
                 _context = new EmplEntities();
             }
             return _context;
         }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

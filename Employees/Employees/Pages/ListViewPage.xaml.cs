@@ -30,5 +30,10 @@ namespace Employees.Pages
         {
             Classes.Manager.MainFrame.Navigate(new Pages.AddEditPage());
         }
+
+        private void EditUser_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.AddEditPage());
+        }
     }
 }

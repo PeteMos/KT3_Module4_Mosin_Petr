@@ -4,11 +4,11 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="cca49172fc124434b9deb30b6b8b6856" Name="Diagram1">
-        <EntityTypeShape EntityType="EmplModel.Enter" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="EmplModel.Gender" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="EmplModel.Main" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="EmplModel.Role" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="f72b8a06403e483fa19055db1ed894ce" Name="Diagram1">
+        <EntityTypeShape EntityType="EmplModel.Enter" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmplModel.Gender" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmplModel.Main" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmplModel.Role" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
         <AssociationConnector Association="EmplModel.FK_Main_Enter" ManuallyRouted="false" />
         <AssociationConnector Association="EmplModel.FK_Main_Gender" ManuallyRouted="false" />
         <AssociationConnector Association="EmplModel.FK_Main_Role" ManuallyRouted="false" />

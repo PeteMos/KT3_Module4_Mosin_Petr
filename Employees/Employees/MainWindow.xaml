@@ -17,7 +17,7 @@
                 Margin="200,0,0,0"></Image>
             <TextBlock Text="ИС по прокату спортивного инвентаря" FontSize="25"
                    HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-            <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
         </Grid>
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>
